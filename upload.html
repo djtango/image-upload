@@ -18,12 +18,23 @@
         <a class="nav_block" href="/users/sign_in" id="sign_in">Sign In</a>
       </div>
     </header>
+    <div id="main_banner">
+      upload
+    </div>
     <main>
       <form class="image_upload" action="/user/file/upload" method="POST">
-        <input id="file_upload" type="file" placeholder="+" enctype="multipart/form-data" accept="image/*">
-        <button id="upload_button" type="submit">Upload</button>
+        <div class="upload_block" id="upload_field">
+          <input id="file_upload" type="file" placeholder="+" enctype="multipart/form-data" accept="image/*">
+        </div>
+        <div class="upload_block" id="upload_text">
+          <p>
+            Drag or drop a file into the space provided in the left. Alternatively, you can click on the field to select a file from your directory. Currently we only support jpg, png and gif formats.
+          </p>
+          <button id="upload_button" type="submit">Upload</button>
+        </div>
       </form>
     </main>
+
     <script src="js/upload.js"></script>
   </body>
 </html>
