@@ -7,10 +7,23 @@
   </head>
 
   <body>
-    <form class="video_upload" action="/user/file/upload" method="POST">
-      <input id="file_upload" type="file" placeholder="+" enctype="multipart/form-data">
-      <button id="upload_button" type="submit">Upload</button>
-    </form>
+    <header>
+      <div id="nav_bar">
+        <img src="images/vidsy_icon.png" alt="Vidsy" id="header_icon">
+        <div class="nav_block">CHALLENGES</div>
+        <div class="nav_block">CREATORS</div>
+        <div class="nav_block">BRANDS</div>
+        <div class="nav_block">ABOUT</div>
+        <div class="nav_block">BLOG</div>
+        <a class="nav_block" href="/users/sign_in" id="sign_in">Sign In</a>
+      </div>
+    </header>
+    <main>
+      <form class="image_upload" action="/user/file/upload" method="POST">
+        <input id="file_upload" type="file" placeholder="+" enctype="multipart/form-data" accept="image/*">
+        <button id="upload_button" type="submit">Upload</button>
+      </form>
+    </main>
     <script src="js/upload.js"></script>
   </body>
 </html>
