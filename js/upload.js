@@ -12,5 +12,11 @@ window.onload = function() {
       window.alert("Error: unsupported image file format. Please submit the file as a jpg, png or gif.")
       fileInput.value = "";
     }
+    if(fileInput.value) {
+      fileInput.style.backgroundImage = "url(images/loading_spinner.gif)";
+      fileInput.style.backgroundColor = "white";
+    } else {
+      fileInput.style.cssText = ""; 
+    }
   });
 };
