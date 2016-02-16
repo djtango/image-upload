@@ -1,5 +1,4 @@
 #JS Upload Tech Test
-=====================
 Test suite used: karma/Jasmine
 
 Run tests using (after install node modules):
