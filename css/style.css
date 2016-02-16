@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  height: 100%;
 }
 /*
  *
@@ -61,8 +62,10 @@ header {
 
 main {
   max-width: 650px;
+  min-height: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: -155px;
 }
 
 p {
@@ -89,6 +92,8 @@ p {
 
 .image_upload {
   margin-top: 96px;
+  margin-bottom: 150px;
+  padding-bottom: 96px;
 }
 
 .upload_block {
@@ -117,6 +122,11 @@ p {
 #file_upload:hover {
   background: url(../images/img_upload_hover.png) no-repeat center;
   border-color: #D8D8D8;
+}
+
+#file_upload::-webkit-file-upload-button {
+  visibility: hidden;
+  width: 0px;
 }
 
 #upload_companion {
@@ -152,4 +162,40 @@ input[type="submit"] {
 
 input[type="file"] {
   box-sizing: border-box;
+}
+
+/*
+ *
+ * Styling for the footer
+ *
+ * */
+
+footer, .push {
+  background-color: #252525;
+  padding: 0 20px;
+  height: 155px;
+  clear: both;
+}
+
+.footer_block {
+  width: 200px;
+  margin: 0;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  clear: both;
+}
+
+.footer_header {
+  color: #ededed;
+}
+.footer_link {
+  color: #26E9CF;
+  line-height: 1.6em;
+  border-bottom: rgba(237, 237, 237, .3);
+  font-family: sans-serif;
+}
+
+.footer_email {
+  color: #EDEDED;
 }
